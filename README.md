@@ -2,6 +2,7 @@
 A basic markup language for text files.
 
 # Syntax
+All `.txtup` files are compiled to an `.txt` with the same name file.
 All commands go inside `%` symbols at the beginning of a line
 
 Command | Description
