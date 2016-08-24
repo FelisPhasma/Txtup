@@ -1,0 +1,22 @@
+{
+  "name": "txt-markup",
+  "version": "1.0.0",
+  "description": "A simple markup language for .txt files",
+  "main": "main.js",
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "walk": "^2.3.9"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git repo"
+  },
+  "keywords": [
+    "Txt",
+    "markup"
+  ],
+  "author": "Felis Phasma",
+  "license": "FOSSL-G https://github.com/FelisPhasma/Felis-Licenses"
+}
