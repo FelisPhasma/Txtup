@@ -34,8 +34,8 @@ function center(line, lineWidth){
         rPadding = lineWidth - line.length - lPadding;
     for(;lPadding--;)
         line = " " + line;
-    for(;rPadding--;)
-        line += " ";
+    //for(;rPadding--;)
+    //    line += " ";
     return line;
 }
 function generate(char, num){
