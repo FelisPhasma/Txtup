@@ -14,10 +14,10 @@ Command | Description
 
 Lines are automatically wrapped such that they don't overflow the `docwidth`. 
 
-# Ussage
+# Installation and Ussage
 
 ```
-npm install -g txtup
+npm install -g --production txtup
 
 txtup TxtupDir
 ```
