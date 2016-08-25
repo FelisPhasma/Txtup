@@ -1,6 +1,6 @@
 {
   "name": "txtup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple markup language for txt files",
   "main": "main.js",
   "dependencies": {
@@ -10,7 +10,7 @@
   },
   "scripts": {},
   "bin": {
-    "txtmarkup": "cli.js"
+    "txtup": "cli.js"
   },
   "repository": {
     "type": "git",
