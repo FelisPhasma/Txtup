@@ -10,7 +10,7 @@
   },
   "scripts": {},
   "bin": {
-    "txtup": "cli.js"
+    "txtmarkup": "cli.js"
   },
   "repository": {
     "type": "git",
