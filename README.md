@@ -17,7 +17,7 @@ Lines are automatically wrapped such that they don't overflow the `docwidth`.
 # Installation and Ussage
 
 ```
-npm install -g --production txtup
+npm install -g txtup
 
 txtup TxtupDir
 ```
