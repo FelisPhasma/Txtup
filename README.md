@@ -1,8 +1,7 @@
-# Txt Markup
+# Txtup
 A basic markup language for text files.
 
 # Syntax
-All `.txtup` files are compiled to an `.txt` with the same name file.
 All commands go inside `%` symbols at the beginning of a line
 
 Command | Description
@@ -14,6 +13,16 @@ Command | Description
 `\%` | Escapes `%` at the beginning of a line
 
 Lines are automatically wrapped such that they don't overflow the `docwidth`. 
+
+# Ussage
+
+```
+npm install -g txtup
+
+txtup TxtupDir
+```
+
+All `.txtup` files are compiled to an `.txt` with the same name file.
 
 # Examples
 

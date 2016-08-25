@@ -1,23 +1,25 @@
 {
-  "name": "txt-markup",
-  "version": "1.0.0",
-  "description": "A simple markup language for .txt files",
+  "name": "txtup",
+  "version": "0.0.1",
+  "description": "A simple markup language for txt files",
   "main": "main.js",
   "dependencies": {
     "chokidar": "^1.6.0",
-    "walk": "^2.3.9"
+    "walk": "^2.3.9",
+    "commander": "^2.9.0"
   },
-  "scripts": {
-    
+  "scripts": {},
+  "bin": {
+    "txtmarkup": "cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "git repo"
+    "url": "https://github.com/FelisPhasma/Txtup"
   },
   "keywords": [
     "Txt",
     "markup"
   ],
-  "author": "Felis Phasma",
-  "license": "FOSSL-G (https://github.com/FelisPhasma/Felis-Licenses)"
+  "author": "Felis Phasma <felisphasma@gmail.com> (felisphasma.github.io)",
+  "license": "FOSSL-G"
 }

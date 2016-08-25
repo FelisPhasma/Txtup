@@ -1,5 +1,5 @@
 /**
-txt-markup txtFileDir
+txtmarkup txtFileDir
 */
 "use strict";
 let chokidar = require('chokidar'),
@@ -7,7 +7,8 @@ let chokidar = require('chokidar'),
     walk = require('walk'),
     path = require('path'),
     watchDir = process.argv[2].replace(/\//gi, "").replace(/\\/gi, ""),
-    txtFiles = [];
+    txtFiles = [],
+    theDIR = process.argv.length == 4 ? process.argv[3] : __dirname;
 function lineLimit(line, lineWidth){
     if(line.length <= lineWidth)
         return line;
@@ -34,8 +35,6 @@ function center(line, lineWidth){
         rPadding = lineWidth - line.length - lPadding;
     for(;lPadding--;)
         line = " " + line;
-    //for(;rPadding--;)
-    //    line += " ";
     return line;
 }
 function generate(char, num){
@@ -97,7 +96,8 @@ function parseTxtFile(fpath){
 }
 function init(){
     console.log("Init");
-    let fileWalker = walk.walk(__dirname + "\\" + watchDir, { followLinks: false });
+    console.log(theDIR + "\\" + watchDir);
+    let fileWalker = walk.walk(theDIR + "\\" + watchDir, { followLinks: false });
     fileWalker.on('file', (root, stat, next) => {
         let fExt = path.extname(stat.name).toLowerCase();
         // Aparently node-sass can't compile sass, lol
@@ -120,3 +120,9 @@ function init(){
 }
 
 init();
+
+// keeps the program running until aborted
+function timeout(){
+    setTimeout(timeout, 5000);
+}
+setTimeout(timeout, 5000);
